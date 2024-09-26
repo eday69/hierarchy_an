@@ -1,5 +1,8 @@
 # Hierarchy Tree
 
+Example:
+![image](https://github.com/user-attachments/assets/61db8ce4-133b-41ad-b76e-9f6c7405c30a)
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
