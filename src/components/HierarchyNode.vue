@@ -78,16 +78,16 @@ const departmentColor = getDepartmentColor(props.person.data['Department'])
 
 <template>
 
-  <div :class="`relative m-auto flex flex-col p-4 gap-y-2 rounded-lg shadow-md group-hover:cursor-pointer ${backgroundCard}`">
+  <div :class="`relative w-[250px] h-[350px] m-auto flex flex-col p-4 gap-y-2 rounded-lg shadow-md group-hover:cursor-pointer ${backgroundCard}`">
     <div class="flex bg-blue-400 rounded-full text-white p-3 self-start -mt-8">{{ initials }}</div>
     <div class="flex flex-col gap-y-1 mt-0">
       <span class="font-medium mx-auto text-lg">{{ propsAsRefs.person.data["Name"] }}</span>
-      <span class="mx-auto text-gray-600 text-sm">{{ propsAsRefs.person.data["Job Title"] }}</span>
+      <span class="mx-auto text-gray-600 text-sm w-full whitespace-nowrap overflow-hidden text-ellipsis">{{ propsAsRefs.person.data["Job Title"] }}</span>
     </div>
 
     <div class="flex flex-col gap-1 mb-0 text-sm">
       <!-- Department-->
-      <span :class="`px-2 py-0.5 rounded-2xl m-auto border-2 border-gray-800 border-opacity-60 ${backgroundPills}`">
+      <span :class="`px-2 py-0.5 rounded-2xl w-full whitespace-nowrap overflow-hidden text-ellipsis border-2 border-gray-800 border-opacity-60 ${backgroundPills}`">
         {{ propsAsRefs.person.data["Department"] }}
       </span>
       <!-- Location -->
